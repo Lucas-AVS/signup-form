@@ -3,7 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>signup form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="image-container">
+        <img class="backgroud" src="./assets/cat-background.jpeg" alt="" />
+        <div class="logo">
+          <img class="logo-image" src="./assets/cat-logo.png" alt="" />
+          <h1>CUTE CAT</h1>
+        </div>
+      </div>
+
+      <div class="hero-section">
+        <header>
+          <h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            esse ipsum necessitatibus cumque doloremque accusamus harum
+            consectetur omnis, iste et iure odit, autem facere recusandae,
+            corrupti maiores sunt cum modi!
+          </h2>
+        </header>
+
+        <div class="form-container">
+          <h2>Signup!</h2>
+          <form action="post">
+            <label for="name">Your name</label>
+            <input type="text" id="name" />
+            <label for="catName">Your cat's name</label>
+            <input type="text" id="catName" />
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <label for="phone">Phone number</label>
+            <input type="number" id="phone" />
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <label for="password">Confirm password</label>
+            <input type="password" id="password" />
+          </form>
+        </div>
+
+        <div class="footer">
+          <button type="submit"></button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
