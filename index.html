@@ -32,26 +32,38 @@
           </h2>
         </header>
 
-        <div class="form-container">
-          <h2>Signup!</h2>
-          <form action="post">
-            <label for="name">Your name</label>
-            <input type="text" id="name" />
-            <label for="catName">Your cat's name</label>
-            <input type="text" id="catName" />
-            <label for="email">Email</label>
-            <input type="email" id="email" />
-            <label for="phone">Phone number</label>
-            <input type="number" id="phone" />
-            <label for="password">Password</label>
-            <input type="password" id="password" />
-            <label for="password">Confirm password</label>
-            <input type="password" id="password" />
+        <fieldset class="form-container">
+          <legend>Signup!</legend>
+          <form id="signup" action="post">
+            <div class="label-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="label-group">
+              <label for="catName">Your cat's name</label>
+              <input type="text" id="catName" />
+            </div>
+            <div class="label-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="label-group">
+              <label for="phone">Phone number</label>
+              <input type="number" id="phone" />
+            </div>
+            <div class="label-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+            </div>
+            <div class="label-group">
+              <label for="password">Confirm password</label>
+              <input type="password" id="password" />
+            </div>
           </form>
-        </div>
+        </fieldset>
 
         <div class="footer">
-          <button type="submit"></button>
+          <button type="submit" form="signup">Create account</button>
           <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>
