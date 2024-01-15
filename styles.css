@@ -43,17 +43,115 @@ img.backgroud {
 }
 
 .hero-section {
+    height: calc(100vh - 300px);
+    background-color: white;
     border-style: dashed;
     border-color: rgb(76, 163, 204);
     border-width: 6px;
-    margin: 200px 90px;
+    margin: 150px 90px;
 }
 
 main {
     display: flex;
 }
 
-form {
+header {
+    height: 33%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 248, 239);
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+fieldset {
+    margin: 40px ;
+    height: calc(33% - 80px);
+    border-width: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    legend {
+        float: left;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+.label-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    column-gap: 5%;
+
+    label {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    input {
+        height: 1.5rem;
+        border-width: 1px;
+        border-radius: 5px;
+        background-color: rgb(248, 248, 239);
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+.footer {
+    height: 33%;
+    background-color: rgb(248, 248, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+
+    button {
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgb(76, 163, 204);
+        padding: 15px 60px;
+        border-width: 0;
+        border-radius: 5px;  
+    }
+
+    button:hover {
+        background-color: rgb(50, 120, 153);
+        cursor: pointer;
+    }
+
+    p{
+        font-size: 1rem;
+        
+        a{
+            color: rgb(76, 163, 204);
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none; 
+        }
+        a:hover {
+            color: rgb(50, 120, 153);
+        }
+    }
 }
